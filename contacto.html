@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel='icon' href='images/fav-logo.png'>
+ <title>Contacto - Evoluciónate</title>
+ <link rel="stylesheet" href="global.css">
+ <link rel="stylesheet" href="contacto.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+ <div class="container">
+  <div class='logo'>
+   <picture style='display: contents; width: 100%'>
+    <img src='images/logo.png' alt='logo-24/7'>
+   </picture>
+  </div>
+  <nav class='nav-items'>
+   <ul class='nav-1'>
+    <li class='item-link'><a href="index.html" class='item-link'>Inicio</a></li>
+    <li class='item-link'><a href="nosotros.html" class='item-link'>Nosotros</a></li>
+    <li class='item-link'><a href="servicios.html" class='item-link'>Servicios</a></li>
+    <li class='item-link'><a href="contacto.html" class='item-link'>Contacto</a></li>
+   </ul>
+   <ul>
+    <li class='nav-1'>
+     <a href="#login" class="item-link login-btn">Iniciar sesión</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+<main>
+ <div class='section-title'>
+  <h2 class='title'>
+   ¡Contactanos!
+  </h2>
+ </div>
+ <section id='form'>
+  <form id='formContact'>
+   <div class='item'>
+    <label for='name'>Tú Nombre</label>
+    <input type='text' id='name' name='name' placeholder='Nombre' required/>
+   </div>
+   <div class='item'>
+    <label for='number'>Tú Número de Contacto</label>
+    <input type='number' id='number' name='number' placeholder='Número' required/>
+   </div>
+   <div class='item'>
+    <label for='email'>Tú Email</label>
+    <input type='email' id='email' name='email' placeholder='Email...' required/>
+   </div>
+   <div class='item'>
+    <label for='message'>Detalles</label>
+    <textarea id='message' placeholder='Mensaje...'></textarea>
+
+   </div>
+   <div class='item terms'>
+    <input type='checkbox' id='terms' name='terms' required/>
+    <label for='terms'>
+     Aceptas los <strong>Terminos y Condiciones</strong> y <strong>Tratamiento de Datos Personales</strong>.
+    </label>
+   </div>
+
+   <div class='control'>
+    <button>Enviar</button>
+   </div>
+  </form>
+ </section>
+ <section id='alert' class='hidden alert'>
+  <p>Enviado Correctamente</p>
+ </section>
+</main>
+<footer>
+ <p class='family-barlow'>&copy; 2025. Todos los derechos reservados</p>
+</footer>
+<script type='application/javascript' src='script.js'></script>
+</body>
+</html>
